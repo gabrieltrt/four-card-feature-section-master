@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    }
+    
+    body {
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    background-color: #FAFAFA;
+    }
+    
+    img, picture, video, canvas, svg {
+      display: block;
+      max-width: 100%;
+    }
+    
+    input, button, textarea, select {
+      font: inherit;
+    }
+
+    main {
+        max-width: 19.4375rem;
+        margin: 0 auto;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    span {
+        font-weight: 200;
+    }
+
+    main {
+        padding: 5.3125rem 0 3.375rem 0;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    .title-box p {
+        color: #4D4F62;
+        text-align: center;
+        opacity: 0.5;
+        font-size: 0.9375rem;
+    }
+
+    .title-box {
+        margin-bottom: 4.75rem;
+    }
+
+    .card {
+        background: #FFFFFF;
+        padding: 1.6875rem 1.75rem 1.75rem 1.8125rem;
+        margin-bottom: 1.5rem;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+
+    .supervisor-box {
+        border-top: solid 3.5px #00C8C8;
+    }
+
+    .team-box {
+        border-top: solid 3.5px #FF637B;
+    }
+
+    .karma-box {
+        border-top: solid 3.5px #FCAE4A;
+    }
+
+    .calculator-box {
+        border-top: solid 3.5px #377FD2;
+    }
+
+    .cards p {
+        font-size: 0.8125rem;
+        opacity: 0.5;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    }
+
+    .cards img {
+        align-self: flex-end;
+        margin-top: 2.0625rem;
+    }
+
+    @media only screen and (min-width: 1023px) {
+
+    main {
+        max-width: 69.375rem;
+    }
+    
+    .title-box {
+        max-width: 540px;
+        margin: 0px auto 4.0625rem auto;
+    }
+
+    .supervisor-box {
+        grid-area: supervisor-box;
+        align-self: center;
+    }
+
+    .team-box {
+        grid-area: team-box;
+    }
+
+    .karma-box {
+        grid-area: karma-box;
+    }
+
+    .calculator-box {
+        grid-area: calculator-box;
+        align-self: center;
+    }
+
+    .card {
+        padding: 2rem;
+        margin-bottom: 0;
+    }
+
+    .cards h2 {
+        margin-bottom: 0.375rem;
+        line-height: 1.7;
+    }
+
+    .cards img {
+        margin-top: 2.5rem;
+    }
+
+    .cards {
+        display: grid;
+        grid-template: 1fr 1fr / 1fr 1fr 1fr;
+        gap: 30px;
+        grid-template-areas: 
+        "supervisor-box team-box calculator-box"
+        "supervisor-box karma-box calculator-box";
+    } 
+
+
+    }
+    
+    
